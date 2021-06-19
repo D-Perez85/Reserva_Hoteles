@@ -1,0 +1,36 @@
+:root {
+  --font-family-1: 'IBM Plex Sans', sans-serif;
+  --font-family-2: 'IBM Plex Mono', monospace;
+  --font-size-1-320: 15px;
+  --font-size-2-320: 20px;
+  --font-size-3-320: 16px;
+}
+.cont-filters {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 3px solid;
+}
+.card-conteinerApp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6px;
+}
+.card-conteinerApp>h1{
+  max-width: 500px;
+}
+.noResults{
+  font-family: var(--font-family-2);
+  font-size: 20px;
+  
+}
+
+
+@media (max-width: 764px) {
+
+  .card-conteinerApp>h1{
+    max-width: 250px;
+  }
+  
+
+}

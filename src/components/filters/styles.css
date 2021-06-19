@@ -1,0 +1,38 @@
+:root {
+  --font-family-1: 'IBM Plex Sans', sans-serif;
+  --font-family-2: 'IBM Plex Mono', monospace;
+}
+select,
+input {
+  border-radius: 20px;
+  height: 23px;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+.form-flex{
+  display: flex;
+  justify-content: center;
+}
+.results{
+  display: flex; 
+  justify-content: center;
+  font-family: var(--font-family-2);
+  font-size: 20px;
+}
+@media (max-width: 764px) {
+  select,
+  input {
+    width: 265px;
+  }
+  .form-flex{
+    flex-wrap: wrap;
+  }
+  .results{
+    font-size: 16px;
+  } 
+}

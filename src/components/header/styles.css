@@ -1,0 +1,48 @@
+.cont-header {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #d6d6d6;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    letter-spacing: 0.1em;
+  }
+
+  a:hover {
+    font-size: 1.1em;
+    color: #050404;
+  }
+  a {
+    transition: color 0.8s linear 0.2s;
+  }
+
+  .txt-nav,
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 4px;
+    display: flex;
+    padding: 5px;
+  }
+
+  li {
+    text-decoration: none;
+  }
+  @media (max-width: 414px) {
+    .nav {
+      flex-direction: colum;
+    }
+    .txt-nav,
+    a {
+      width: 165px;
+      flex-direction: colum;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+  
