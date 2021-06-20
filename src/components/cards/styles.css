@@ -4,106 +4,108 @@
   box-sizing: border-box;
 }
 :root {
-  --font-family-1: 'IBM Plex Sans', sans-serif;
-  --font-family-2: 'IBM Plex Mono', monospace;
+  --font-family-1: "IBM Plex Sans", sans-serif;
+  --font-family-2: "IBM Plex Mono", monospace;
   --font-size-1-320: 15px;
   --font-size-2-320: 18px;
   --font-size-3-320: 16px;
 }
 .cont-cards {
-    height: 500px;
-    background-color: lightcoral;
-    border: 1px solid black;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .card-container > p {
-    font-family: var(--font-family-2);
-    font-size: var(--font-size-1-320);
-    padding-left: 10px;
-    letter-spacing: 0.9px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1.5em;
-    max-width: 1200px;
-    margin: 0 auto; 
-  }
+  height: 500px;
+  background-color: lightcoral;
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.card-container > p {
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-1-320);
+  padding-left: 10px;
+  letter-spacing: 0.9px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card-container {
+  max-width: 30%;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.75);
+}
+.photo {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-title {
+  margin: 10px;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-2-320);
+  color: #4f3b3b;
+}
+span {
+  font-size: 1em;
+  letter-spacing: 0.2px;
+  margin-bottom: 7px;
+}
+.tagHotels {
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 1px;
+  max-width: 228px;
+}
+.country-city,
+.rooms {
+  margin-top: 25px;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1-320);
+}
+button {
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-3-320);
+  color: #fff;
+  width: 270px;
+  background-color: #a577a5;
+  border-color: #5a1a6d;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  justify-content: center;
+  margin: 20px auto;
+  letter-spacing: 1px;
+}
+button:hover {
+  background-image: linear-gradient(225deg, #fc8ad0, #d363b1);
+  color: #ffffff;
+}
+.country-city,
+.rooms,
+.price {
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  width: 250px;
+  margin: 3px auto;
+  background-color: azure;
+}
+.svg-faBed,
+.svg-faGlobe {
+  font-size: 18px;
+  color: violet;
+  margin-right: 5px;
+}
+#svg-faDollar {
+  font-size: 18px;
+  color: cadetblue;
+  margin: 0 auto;
+}
+@media (max-width: 764px) {
   .card-container {
-    max-width: 30%;
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.75);
+    max-width: 320px;
   }
-  .photo {
-    height: 250px;
-    width: 100%;
-    border-radius: 10px;
-  }
-  .card-title {
-    margin: 10px;
-    font-family: var(--font-family-1);
-    font-size: var(--font-size-2-320);
-    color: #4f3b3b; 
-  }
-  span {
-    font-size: 1em;
-    letter-spacing: 0.2px;
-    margin-bottom: 7px;
-  }
-  .tagHotels {
-    margin: 0 auto;
-    border-radius: 12px;
-    padding: 1px;
-    max-width: 227px;
-  }
-  .country-city, .rooms {
-    margin-top: 25px;
-    font-family: var(--font-family-1);
-    font-size: var(--font-size-1-320);
-  }
-  button {
-    font-family: var(--font-family-2);
-    font-size: var(--font-size-3-320);
-    color: #fff;
-    width: 270px;
-    background-color: #a577a5;
-    border-color: #5a1a6d;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    font-weight: 400;
-    line-height: 2;
-    text-align: center;
-    justify-content: center;
-    margin: 20px auto;
-    letter-spacing: 1px;
-  }
-  button:hover {
-    background-image: linear-gradient(225deg, #fc8ad0, #d363b1);
-    color: #ffffff; 
-  }
-  .country-city, .rooms, .price{
-    display: flex;
-    justify-content: center;
-    border: 1px solid lightgray;
-    width: 250px;
-    margin: 3px auto;
-    background-color: azure;
-  }
-  .svg-faBed, .svg-faGlobe{
-    font-size: 18px;
-    color: violet; 
-    margin-right: 5px;
-  }
-  #svg-faDollar{
-    font-size: 18px;
-    color: cadetblue; 
-    margin: 0 auto;
-  }
-  @media (max-width: 764px) {
-    .card-container {
-      max-width: 320px;
-    }
- 
-  }
-  
+}

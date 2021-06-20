@@ -1,15 +1,17 @@
-import React from 'react'
-import './styles.css'
+import React from "react";
+import "./styles.css";
 /**
  * @description Function that return all the components of filters type.
  * @param stateReset is the reference for the  stateReset fn, who contains the list complete of value restarted.
-*/
-function Button({stateReset}){
-    const cleanBtn =()=>{
-        stateReset()
-    }; 
-    return(
-        <button onClick={cleanBtn} type="reset" className="btn-filter">RESET</button>  
-    )
+ */
+function Button({ stateReset }) {
+  const cleanBtn = () => {
+    stateReset();
+  };
+  return (
+    <button onClick={cleanBtn} type="reset" className="btn-filter">
+      RESET
+    </button>
+  );
 }
-export default Button; 
+export default Button;

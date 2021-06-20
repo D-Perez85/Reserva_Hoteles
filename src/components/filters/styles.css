@@ -1,38 +1,58 @@
 :root {
-  --font-family-1: 'IBM Plex Sans', sans-serif;
-  --font-family-2: 'IBM Plex Mono', monospace;
+  --font-family-1: "IBM Plex Sans", sans-serif;
+  --font-family-2: "IBM Plex Mono", monospace;
 }
 select,
 input {
   border-radius: 20px;
+  border: 1px solid;
   height: 23px;
   width: 200px;
-  margin: 10px;
+  margin-right: 20px;
   text-align: center;
   letter-spacing: 0.1em;
   font-size: 13px;
   cursor: pointer;
   outline: none;
 }
-.form-flex{
+.form-flex {
   display: flex;
   justify-content: center;
+  max-width: 1100px;
+  margin: 10px auto;
+  flex-wrap: wrap;
 }
-.results{
-  display: flex; 
+.results {
+  display: flex;
   justify-content: center;
   font-family: var(--font-family-2);
   font-size: 20px;
+}
+.text-filter {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-2);
+  font-size: 1.1em;
+  color: rgb(50, 54, 55, 0.9);
+}
+h5 {
+  padding: 10px 5px 0px;
 }
 @media (max-width: 764px) {
   select,
   input {
     width: 265px;
   }
-  .form-flex{
-    flex-wrap: wrap;
+  .form-flex {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
   }
-  .results{
+  .results {
     font-size: 16px;
-  } 
+  }
+  .text-filter {
+    align-items: center;
+  }
 }

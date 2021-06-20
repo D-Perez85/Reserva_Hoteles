@@ -1,48 +1,29 @@
+:root {
+  --font-family-1: "IBM Plex Sans", sans-serif;
+  --font-family-2: "IBM Plex Mono", monospace;
+}
 .cont-header {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #d6d6d6;
-    max-width: 1300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    letter-spacing: 0.1em;
-  }
-
-  a:hover {
-    font-size: 1.1em;
-    color: #050404;
-  }
-  a {
-    transition: color 0.8s linear 0.2s;
-  }
-
-  .txt-nav,
-  a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    margin-right: 4px;
-    display: flex;
-    padding: 5px;
-  }
-
-  li {
-    text-decoration: none;
-  }
-  @media (max-width: 414px) {
-    .nav {
-      flex-direction: colum;
-    }
-    .txt-nav,
-    a {
-      width: 165px;
-      flex-direction: colum;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-  }
-  
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cont-text {
+  background-color: #a577a5;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  height: 60px;
+}
+.text-header {
+  padding-left: 10px;
+  font-family: var(--font-family-2);
+  font-weight: bolder;
+  color: aliceblue;
+  font-size: 1.6em;
+}
+.text-header:hover {
+  color: #2b2828;
+}
+.text-header {
+  transition: color 0.8s linear 0.1s;
+}
