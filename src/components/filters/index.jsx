@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles.css";
 import Enter from "./inputs/enter";
 import Outer from "./inputs/outer";
 import Select from "./selects/index";

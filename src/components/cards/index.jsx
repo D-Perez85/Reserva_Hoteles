@@ -1,4 +1,3 @@
-import "./styles.css";
 import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

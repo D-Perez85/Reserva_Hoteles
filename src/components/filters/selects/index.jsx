@@ -1,6 +1,6 @@
 import React from "react";
 import { hotelsData } from "../../../data";
-import "./styles.css";
+
 /**
  * @description Function that return the components of Select type filtered, using a FOS (map) and an event onChange.
  * @param list is the parameter that comes from the parent component with the values to filter

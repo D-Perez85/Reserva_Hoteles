@@ -1,0 +1,106 @@
+  .cont-cards {
+    height: 500px;
+    background-color: $card-bg; 
+    border: 1px solid $dark; 
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .card-container > p {
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-1-320);
+    padding-left: 10px;
+    letter-spacing: 0.9px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .card-container {
+    max-width: 30%;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.75);
+  }
+  .photo {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card-title {
+    margin: 10px;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-4-320);
+    color: $card-title;
+  }
+  span {
+    font-size: 0.9em;
+    letter-spacing: 0.1px;
+    margin-bottom: 7px;
+  }
+  .tagHotels {
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 0.1px;
+    max-width: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .country-city,
+  .rooms {
+    margin-top: 25px;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-1-320);
+  }
+  button {
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-3-320);
+    color: #fff;
+    width: 270px;
+    background-color: $card-btn-bg;
+    border-color: $card-btn-border;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-image: linear-gradient(225deg, $card-hover, #d363b1);
+      color: $white;
+    }
+  }
+  .country-city,
+  .rooms,
+  .price {
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    width: 250px;
+    margin: 2px auto;
+    background-color: azure;
+  }
+  .svg-faBed,
+  .svg-faGlobe {
+    font-size: var(--font-size-4-320);
+    color: violet;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+  #svg-faDollar {
+    font-size: var(--font-size-4-320);
+    color: cadetblue;
+    margin: 0 auto;
+  }
+  @media (max-width: 764px) {
+    .card-container {
+      max-width: 320px;
+    }
+  }
+  

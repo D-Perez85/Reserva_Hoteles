@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 /**
  * @description Function that return all the components of filters type.
  * @param stateReset is the reference for the  stateReset fn, who contains the list complete of value restarted.

@@ -1,0 +1,30 @@
+.btn-filter {
+    color: #fff;
+    width: 140px;
+    background-color: #0064d7;
+    border-color: #1a2d16;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: all ease 0.5s;
+    outline: none;
+    transform: translate(0px, 10px);
+          &:hover {
+      background-image: linear-gradient(225deg, #9156f7, #21d2f2);
+      color: #ffffff;
+    }
+  }
+  @media (max-width: 1100px) {
+    .btn-filter {
+      display: none;
+    }
+  }
+  
